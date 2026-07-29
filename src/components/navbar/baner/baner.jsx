@@ -7,10 +7,10 @@ const Baner = () => {
       <div className="container mx-auto px-6 py-10">
         <div className="flex min-h-75 items-center justify-between gap-10">
 
-          {/* Left Side */}
+         
           <div className="max-w-xl">
 
-            {/* Small Badge */}
+            
             <div className="mb-4">
               <span className="badge border-none bg-[#EDE9FE] px-4 py-3 text-xs text-[#4F39F6]"> <span className="h-2 w-2 rounded-full bg-[#4F39F6]"></span>
                 New: AI-Powered Tools Available
