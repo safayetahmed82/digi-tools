@@ -1,7 +1,7 @@
 import "./App.css";
-import { Suspense } from "react";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { Suspense, useState } from "react";
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Navbar from "./components/navbar/navbar";
 import Baner from "./components/navbar/baner/baner";
 import Rating from "./components/rating/rating";
@@ -17,22 +17,26 @@ const fetchProducts = async () => {
 
 function App() {
   const productsPromise = fetchProducts();
+  const [selectedProduct, setSelectedProduct] = useState([]);
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar selectedProduct={selectedProduct}
+         setSelectedProduct={setSelectedProduct}></Navbar>
       <Baner></Baner>
       <Rating></Rating>
-
+      
       <Suspense
         fallback={<span className="loading loading-spinner loading-md"></span>}
       >
-        <Products productsPromise={productsPromise}></Products>
+        <Products productsPromise={productsPromise} setSelectedProduct={setSelectedProduct} selectedProduct={selectedProduct}></Products>
       </Suspense>
       <Started></Started>
       <Pricing></Pricing>
       <Footer></Footer>
       <ToastContainer />
+
+       
     </>
   );
 }

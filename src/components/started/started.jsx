@@ -5,7 +5,7 @@ import rocketIcon from "../../assets/rocket.png";
 
 const Started = () => {
   return (
-    <div className="w-full bg-gray-50 py-16 px-4">
+    <div className="w-full bg-gray-50 py-16 px-4 mt-18">
       <div className="max-w-5xl mx-auto text-center mb-10">
         <h2 className="text-3xl font-bold text-gray-900">
           Get Started In 3 Steps
