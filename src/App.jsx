@@ -1,7 +1,7 @@
 import "./App.css";
 import { Suspense } from "react";
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/navbar/navbar";
 import Baner from "./components/navbar/baner/baner";
 import Rating from "./components/rating/rating";
@@ -11,20 +11,19 @@ import Footer from "./components/footer/footer";
 import Products from "./components/products/products";
 
 const fetchProducts = async () => {
-  const res = await fetch("/data.json");
+  const res = await fetch(`${import.meta.env.BASE_URL}data.json`);
   return res.json();
 };
 
 function App() {
   const productsPromise = fetchProducts();
-  
 
   return (
     <>
       <Navbar></Navbar>
       <Baner></Baner>
       <Rating></Rating>
-      
+
       <Suspense
         fallback={<span className="loading loading-spinner loading-md"></span>}
       >
@@ -34,8 +33,6 @@ function App() {
       <Pricing></Pricing>
       <Footer></Footer>
       <ToastContainer />
-
-       
     </>
   );
 }
