@@ -12,8 +12,8 @@ const Pricing = () => {
         </p>
       </div>
 
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-        {/* Starter */}
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-start ">
+        
         <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 flex flex-col h-full">
           <h3 className="text-lg font-bold text-gray-900">Starter</h3>
           <p className="text-sm text-gray-500 mt-1">Perfect for getting started</p>
@@ -47,7 +47,7 @@ const Pricing = () => {
           </button>
         </div>
 
-        {/* Pro */}
+        
         <div className="relative bg-gradient-to-b from-[#4F39F6] to-[#9514FA] rounded-2xl p-8 flex flex-col h-full shadow-lg">
           <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-100 text-amber-700 text-xs font-semibold px-3 py-1 rounded-full">
             Most Popular
@@ -93,7 +93,7 @@ const Pricing = () => {
           </button>
         </div>
 
-        {/* Enterprise */}
+        
         <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 flex flex-col h-full">
           <h3 className="text-lg font-bold text-gray-900">Enterprise</h3>
           <p className="text-sm text-gray-500 mt-1">For teams and businesses</p>

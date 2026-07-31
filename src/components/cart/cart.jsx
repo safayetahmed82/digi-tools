@@ -20,13 +20,13 @@ const Cart = ({selectedProduct , setSelectedProduct}) => {
   return (
      <div className="border border-base-300 rounded-xl p-5 shadow-sm">
 
-      {/* Cart title */}
+      
       <h2 className="text-lg font-semibold mb-5">
         Your Cart
       </h2>
       
 
-      {/* Dynamic cart products */}
+      
       <div className="space-y-2">
 
           {
@@ -45,7 +45,7 @@ const Cart = ({selectedProduct , setSelectedProduct}) => {
                 className="flex items-center justify-between bg-base-200 rounded-xl p-3"
               >
 
-                {/* Left side: Image + Product info */}
+              
                 <div className="flex items-center gap-3">
 
                   <div className="avatar">
@@ -69,7 +69,7 @@ const Cart = ({selectedProduct , setSelectedProduct}) => {
 
                 </div>
 
-                {/* Remove button */}
+                
                 <button className="btn btn-ghost btn-xs text-error" 
                 onClick={()=>handleDeleteProduct(product)}>
                   Remove
@@ -82,7 +82,7 @@ const Cart = ({selectedProduct , setSelectedProduct}) => {
 
       </div>
 
-      {/* Total */}
+      
       <div className="flex justify-between items-center mt-5 mb-4">
         <span className="text-lg ">
           Total:
@@ -93,7 +93,7 @@ const Cart = ({selectedProduct , setSelectedProduct}) => {
         </span>
       </div>
 
-      {/* Checkout button */}
+     
       <button 
       onClick={handleCheckout}
       className="btn btn-primary w-full rounded-full">

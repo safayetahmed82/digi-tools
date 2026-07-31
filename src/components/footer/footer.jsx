@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[#0F1121] px-4 pt-14 pb-8">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
-        {/* Brand */}
+       
         <div className="md:col-span-1">
           <h2 className="text-white text-2xl font-bold">DigiTools</h2>
           <p className="text-gray-400 text-sm mt-4 leading-relaxed">
@@ -14,7 +14,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Product */}
+        
         <div>
           <h3 className="text-white font-semibold mb-4">Product</h3>
           <ul className="space-y-3 text-sm text-gray-400">
@@ -25,7 +25,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Company */}
+        
         <div>
           <h3 className="text-white font-semibold mb-4">Company</h3>
           <ul className="space-y-3 text-sm text-gray-400">
@@ -36,7 +36,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Resources */}
+        
         <div>
           <h3 className="text-white font-semibold mb-4">Resources</h3>
           <ul className="space-y-3 text-sm text-gray-400">
@@ -47,7 +47,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social Links */}
+        
         <div>
           <h3 className="text-white font-semibold mb-4">Social Links</h3>
           <div className="flex gap-3">
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom bar */}
+      
       <div className="max-w-5xl mx-auto border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-gray-400 text-sm">
           © 2026 Digitools. All rights reserved.

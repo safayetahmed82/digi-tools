@@ -5,7 +5,7 @@ const Baner = () => {
   return (
     <section className="max-w-7xl mx-auto px-15">
       <div className="container mx-auto px-6 py-10">
-        <div className="flex min-h-75 items-center justify-between gap-10">
+        <div className="flex min-h-75 items-center justify-between gap-10 flex flex-col md:flex-row items-center">
 
          
           <div className="max-w-xl">
